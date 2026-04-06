@@ -32,6 +32,7 @@
     let dobro3 = dobro(n3);
     let dobro4 = dobro(n4);
 
+   //exibe o resultado
     document.getElementById("res1").innerText = "Dobro do valor 1:" + dobro1;
     document.getElementById("res2").innerText = "Dobro do valor 2:" + dobro2;
     document.getElementById("res3").innerText = "Dobro do valor 3:" + dobro3;
