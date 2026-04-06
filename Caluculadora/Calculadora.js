@@ -11,7 +11,8 @@ function quarta_potencia(valor) { return valor ** 4; }
 function quinta_potencia(valor) { return valor ** 5; }
 function sexta_potencia(valor) { return valor ** 6; }
 
-function bhaskara(a, b, c) {
+function bhaskara(a, b, c) 
+{
     let delta = quadrado(b) - (4 * a * c);
 
     if (delta < 0) return "Sem raízes reais";
@@ -22,7 +23,8 @@ function bhaskara(a, b, c) {
     return "x1=" + x1.toFixed(2) + " | x2=" + x2.toFixed(2);
 }
 
-function Calcular() {
+function Calcular() 
+{
     // Pegar os valores 
     let n1 = parseFloat(document.getElementById("a").value) || 0;
     let n2 = parseFloat(document.getElementById("b").value) || 0;
