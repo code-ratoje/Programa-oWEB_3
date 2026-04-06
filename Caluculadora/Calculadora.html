@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Calculadora.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <script src="Calculadora.js"></script>
+    <div id="InputNumbers" class="containerA">
+    <h2>CALCULADORA</h2><br>
+    <form id="Row"> 
+        <div class="containerB">
+            <label >1º valor</label>
+            <input id="inputValor" type="number" name="a" placeholder="valor A">
+        </div>
+
+        <div class="containerB">
+            <label>2º valor</label>
+            <input id="inputValor" type="number" name="b" placeholder="valor B">
+        </div>
+
+        <div class="containerB">
+            <label>3º valor</label>
+            <input id="inputValor" type="number" name="c" placeholder="valor C">
+        </div>
+
+        <div class="containerB">
+            <label>4º valor</label>
+            <input id="inputValor" type="number" name="d" placeholder="valor D">
+        </div>
+    </form>
+    </div>
+
+    <div class="containerA">
+    <form>
+        <label>Dobro:</label>
+        <input type="number" name="Dobro" placeholder="Dobro" readonly>
+
+        <label>Triplo:</label>
+        <input type="number" name="Triplo" placeholder="Triplo" readonly>
+        
+        <label>Quádruplo</label>
+        <input type="number" name="Quadruplo" placeholder="Quádruplo" readonly>
+
+        <label>Quíntuplo:</label>
+        <input type="number" name="Quintuplo" placeholder="Quíntuplo" readonly>
+
+        <label>Sêxtuplo:</label>
+        <input type="number" name="Sextuplo" min="1" placeholder="Sêxtuplo" readonly>
+
+        <label>Quadrado</label>
+        <input type="number" name="Quadrado" placeholder="Quadrado" readonly>
+
+        <label>Cubo</label>
+        <input type="number" name="Cubo" placeholder="Cubo" readonly> 
+
+        <label>Quarta Potencia</label>
+        <input type="number" name="QuartaPotencia" placeholder="Quarta Potencia" readonly> 
+
+        <label>Quinta Potencia</label>
+        <input type="number" name="QuintaPotencia" placeholder="Quinta Potencia" readonly> 
+
+        <label>Sexta Potencia</label>
+        <input type="number" name="SextaPotencia" placeholder="Sexta Potencia" readonly> 
+
+        <label>Bhaskara</label>
+        <input type="number" name="Bhaskara" placeholder="Bhaskara" readonly> 
+
+        <label>Média aritmética entre 4 números</label>
+        <input type="number" name="MediaAritmetica" placeholder="Média aritmética" readonly> 
+
+        <label>Verificar números pares e impares</label>
+        <input type="number" name="ParesImpares" placeholder="Pares e impares" readonly> 
+
+        <hr>
+        <div class="botoes">
+            <input type="submit" value="Calcular">
+            <input type="reset" value="Limpar">
+        </div>
+    </div>
+    </form>  
+</body>
+</html>
