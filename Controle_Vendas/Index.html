@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Roupas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ContainerA">
+        <form action="escolher-produto" method="POST">
+            <h3>Lista de Produtos</h3>
+
+            <div class="ContainerB">
+                <div class="produto-info">
+                    <input type="checkbox" name="camiseta_regata" id="camiseta_regata" onclick="verificar('camiseta_regata','n_camiseta_regata')">
+                    <label for="camiseta_regata">Camiseta Regata</label>
+                </div>
+                <span class="preco">R$ 19,90</span>
+                <input type="number" name="n_camiseta_regata" id="n_camiseta_regata" class="qtd-input" placeholder="0" min="0" disabled>
+            </div>
+
+            <div class="ContainerB">
+                <div class="produto-info">
+                    <input type="checkbox" name="camisa_social" id="camisa_social">
+                    <label for="camisa_social">Camisa Social</label>
+                </div>
+                <span class="preco">R$ 59,90</span>
+                <input type="number" name="n_camisa_social" id="n_camisa_social" class="qtd-input" placeholder="0" min="0" disabled>
+            </div>
+
+            <div class="ContainerB">
+                <div class="produto-info">
+                    <input type="checkbox" name="blusa" id="blusa">
+                    <label for="blusa">Blusa</label>
+                </div>
+                <span class="preco">R$ 119,90</span>
+                <input type="number" name="n_blusa" id="n_blusa" class="qtd-input" placeholder="0" min="0" disabled>
+            </div>
+
+            <div class="ContainerB">
+                <div class="produto-info">
+                    <input type="checkbox" name="puliover" id="puliover">
+                    <label for="puliover">Pullover</label>
+                </div>
+                <span class="preco">R$ 39,90</span>
+                <input type="number" name="n_puliover" id="n_puliover" class="qtd-input" placeholder="0" min="0" disabled>
+            </div>
+
+            <div class="ContainerB">
+                <div class="produto-info">
+                    <input type="checkbox" name="sapato" id="sapato">
+                    <label for="sapato">Sapato</label>
+                </div>
+                <span class="preco">R$ 99,90</span>
+                <input type="number" name="n_sapato" id="n_sapato" class="qtd-input" placeholder="0" min="0" disabled>
+            </div>
+
+            <div class="ContainerB">
+                <div class="produto-info">
+                    <input type="checkbox" name="calca" id="calca">
+                    <label for="calca">Calça</label>
+                </div>
+                <span class="preco">R$ 38,90</span>
+                <input type="number" name="n_calca" id="n_calca" class="qtd-input" placeholder="0" min="0" disabled>
+            </div>
+
+            <div class="ContainerB">
+                <div class="produto-info">
+                    <input type="checkbox" name="meia" id="meia">
+                    <label for="meia">Meias</label>
+                </div>
+                <span class="preco">R$ 9,90</span>
+                <input type="number" name="n_meia" id="n_meia" class="qtd-input" placeholder="0" min="0" disabled>
+            </div>
+
+            <div class="ContainerB">
+                <div class="produto-info">
+                    <input type="checkbox" name="luvas" id="luvas">
+                    <label for="luvas">Luvas</label>
+                </div>
+                <span class="preco">R$ 24,90</span>
+                <input type="number" name="n_luva" id="n_luva" class="qtd-input" placeholder="0" min="0" disabled>
+            </div>
+
+            <div class="ContainerB">
+                <div class="produto-info">
+                    <input type="checkbox" name="jaqueta" id="jaqueta">
+                    <label for="jaqueta">Jaqueta</label>
+                </div>
+                <span class="preco">R$ 329,90</span>
+                <input type="number" name="n_jaqueta" id="n_jaqueta" class="qtd-input" placeholder="0" min="0" disabled>
+            </div>
+
+            <div class="ContainerB">
+                <div class="produto-info">
+                    <input type="checkbox" name="bermuda" id="bermuda">
+                    <label for="bermuda">Bermuda</label>
+                </div>
+                <span class="preco">R$ 69,90</span>
+                <input type="number" name="n_bermuda" id="n_bermuda" class="qtd-input" placeholder="0" min="0" disabled>
+            </div>
+
+            <div class="ContainerB">
+                <div class="produto-info">
+                    <input type="checkbox" name="chinelo" id="chinelo">
+                    <label for="chinelo">Chinelo</label>
+                </div>
+                <span class="preco">R$ 14,90</span>
+                <input type="number" name="n_chinelo" id="n_chinelo" class="qtd-input" placeholder="0" min="0" disabled>
+            </div>
+
+            <div class="ContainerB">
+                <div class="produto-info">
+                    <input type="checkbox" name="bone" id="bone">
+                    <label for="bone">Boné</label>
+                </div>
+                <span class="preco">R$ 6,90</span>
+                <input type="number" name="n_bone" id="n_bone" class="qtd-input" placeholder="0" min="0" disabled>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar Pedido</button>
+        </form>
+        <form action="Metodo_Pagamento">
+            <div class="ContainerB">
+                <div class="produto-info">
+                    <input type="checkbox" name="Vista" id="vista">
+                    <label for="Metodo_Pagamento">À vista</label>
+                    
+                    <input type="checkbox" name="À prazo" id="prazo">
+                    <label for="Metodo_Pagamento">À prazo</label>
+                </div>
+                <div class="produto-info">
+                    <select name="qtd_parcelas" id="qtd_parcelas">
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <label for="quantidade_parcelas">Parcelas</label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="Controle_Vendas.js"></script>
+</body>
+</html>

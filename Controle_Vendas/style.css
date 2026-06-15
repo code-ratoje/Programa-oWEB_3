@@ -1,0 +1,92 @@
+/* Configurações Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form {
+    background: white;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.ContainerA{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+}
+
+/* Alinhamento dos itens */
+.ContainerB {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* Divide em 3 colunas: Nome, Preço, Quantidade */
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    gap: 10px;
+}
+
+.produto-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.produto-info label {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.preco {
+    color: #27ae60;
+    font-weight: bold;
+    text-align: center;
+}
+
+.qtd-input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.qtd-input:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.btn-enviar {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #2980b9;
+}

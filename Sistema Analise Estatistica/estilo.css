@@ -1,0 +1,123 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container 
+{
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 
+{
+    color: #2c3e50;
+    text-align: center;
+}
+
+.grupo-input 
+{
+    margin-bottom: 15px;
+}
+
+label 
+{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="number"] 
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não quebre a largura*/
+}
+
+button 
+{
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover 
+{
+    background-color: #2980b9;
+}
+
+/* Container que agrupa os dados de cada aluno gerado pelo JS */
+.cartao-aluno 
+{
+    background-color: #ecf0f1;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-left: 5px solid #3498db;
+}
+
+/* ESTILIZAÇÃO DO PHP */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td 
+{
+    border: 1px solid #bdc3c7;
+}
+
+th, td 
+{
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #34495e;
+    color: white;
+}
+
+.aprovado 
+{ 
+    color: green; 
+    font-weight: bold; 
+}
+
+.recuperacao 
+{ 
+    color: orange; 
+    font-weight: bold; 
+}
+
+.reprovado 
+{ 
+    color: red; 
+    font-weight: bold; 
+}
+
+.estatisticas 
+{
+    background-color: #e8f8f5;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: 1px solid #1abc9c;
+}
